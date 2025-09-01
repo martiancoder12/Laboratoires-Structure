@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Laboratoires Structure to explore consulting engagements or learn more about our AI-native systems and services.">
+    <title>Contact | Laboratoires Structure</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-contact">
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">Laboratoires Structure</a>
+                
+                <ul class="nav-menu">
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="os.html" class="nav-link">OS</a></li>
+                    <li><a href="contact.html" class="nav-link nav-link-active">Contact</a></li>
+                </ul>
+                
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Contact</h1>
+            </div>
+        </section>
+
+        <!-- Contact Content -->
+        <div class="contact-content">
+            <!-- Intro Text -->
+            <section class="contact-intro">
+                <div class="container">
+                    <p>
+                        Ready to explore a project, request a consultation, or just learn more?<br>
+                        Reach out directly — we typically respond within 48 hours.
+                    </p>
+
+                    <p><strong>Email:</strong> <a href="mailto:ashfaaq@labostructure.com">ashfaaq@labostructure.com</a></p>
+                    <p>Or send a message directly using the form below.</p>
+                </div>
+            </section>
+
+            <!-- Contact Form -->
+            <section class="contact-form">
+                <div class="container">
+                    <form action="https://formspree.io/f/mkgvzavy" method="POST" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="_replyto" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Company (Optional)</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Tell us about your project or how we can help..."></textarea>
+                        </div>
+
+                        <!-- Hidden field for form identification -->
+                        <input type="hidden" name="_subject" value="New contact from Laboratoires Structure website">
+                        
+                        <!-- Redirect after submission -->
+                        <input type="hidden" name="_next" value="https://laboratoires-structure.com/thank-you.html">
+
+                        <button type="submit" class="form-submit">Send Message</button>
+                    </form>
+
+                    <!-- Form Status Messages -->
+                    <div id="form-status" class="form-status" style="display: none;">
+                        <p id="form-message"></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Laboratoires Structure</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
